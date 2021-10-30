@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 26px;
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    line-height: 2.5;
+    margin: 50px 300px;
+}
+
+/* body, html{
+    width: 100%;
+    height: 500vh;
+} */
+
+/* .line-1
+{
+    position: fixed;
+    top: 40%;
+    white-space: nowrap;
+    left: -800px;
+}
+
+.line-2
+{
+    position: fixed;
+    top: 45%;
+    white-space: nowrap;
+    right: -800px;
+} */
+
+/* /////////////////////////////////// */
+/* CARD 1 */
+/* /////////////////////////////////// */
+.info1 {
+    display: flex;
+    margin-top: 50px;
+}
+
+.line-1 {
+    font-size: 40px;
+    color: red;
+    left: -800px;
+}
+
+.line-1::before {
+    vertical-align: super;
+    display: inline-block;
+    height: 2px;
+    background-color: red;
+    content: " ";
+    width: 770px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+
+.line-2 {
+    width: 600px;
+    margin-left: 50px;
+    right: -800px;
+}
+
+#img1 {
+    width: 30vw;
+    height: 60vh;
+}
+
+/* /////////////////////////////////// */
+/* CARD 2 */
+/* /////////////////////////////////// */
+.info2 {
+    display: flex;
+    margin-top: 50px;
+}
+
+.line-3 {
+    font-size: 40px;
+    color: purple;
+    left: -800px;
+}
+
+.line-3::after {
+    vertical-align: super;
+    display: inline-block;
+    height: 2px;
+    background-color: purple;
+    content: " ";
+    width: 770px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+
+.line-4 {
+    width: 600px;
+    margin-right: 50px;
+    right: -800px;
+}
+
+#img2 {
+    width: 30vw;
+    height: 60vh;
+}
+
+/* /////////////////////////////////// */
+/* CARD 3 */
+/* /////////////////////////////////// */
+.info3 {
+    display: flex;
+    margin-top: 50px;
+}
+
+.line-5 {
+    font-size: 40px;
+    color: orangered;
+    left: -800px;
+}
+
+.line-5::before {
+    vertical-align: super;
+    display: inline-block;
+    height: 2px;
+    background-color: orangered;
+    content: " ";
+    width: 770px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+
+.line-6 {
+    width: 600px;
+    margin-left: 50px;
+    right: -800px;
+}
+
+#img3 {
+    width: 30vw;
+    height: 60vh;
+}
+
+/* /////////////////////////////////// */
+/* OTHERS */
+/* /////////////////////////////////// */
+
+.container
+{
+    margin-top: 100px;
+}
+
