@@ -1,120 +1,106 @@
-body{margin-top:20px;}
-.timeline {
-    border-left: 3px solid #727cf5;
-    border-bottom-right-radius: 4px;
-    border-top-right-radius: 4px;
-    background: rgba(56, 56, 58, 0.09);
-    margin: 0 auto;
-    letter-spacing: 0.2px;
-    position: relative;
-    line-height: 1.4em;
-    font-size: 1.03em;
-    padding: 50px;
-    list-style: none;
-    text-align: left;
-    max-width: 40%;
+.pt-100{
+    padding-top:100px;
 }
-
-@media (max-width: 767px) {
-    .timeline {
-        max-width: 98%;
-        padding: 25px;
-    }
+.pb-100{
+    padding-bottom:100px;
 }
-
-.timeline h1 {
-    font-weight: 300;
-    font-size: 1.4em;
+.section-title {
+  margin-bottom: 60px;
 }
-
-.timeline h2,
-.timeline h3 {
-    font-weight: 600;
-    font-size: 1rem;
-    margin-bottom: 10px;
+.section-title p {
+	color: #fff;
+	font-size: 16px;
 }
-
-.timeline .event {
-    border-bottom: 1px dashed #e8ebf1;
-    padding-bottom: 25px;
-    margin-bottom: 25px;
-    position: relative;
+.section-title h4 {
+	text-transform: capitalize;
+	font-size: 40px;
+	position: relative;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	font-weight: 600;
+  color: #fff;
 }
-
-@media (max-width: 767px) {
-    .timeline .event {
-        padding-top: 30px;
-    }
+.section-title h4:before {
+	position: absolute;
+	content: "";
+	width: 60px;
+	height: 2px;
+	background-color: #ff3636;
+	bottom: 0;
+	left: 50%;
+	margin-left: -30px;
 }
-
-.timeline .event:last-of-type {
-    padding-bottom: 0;
-    margin-bottom: 0;
-    border: none;
+.section-title h4:after {
+	position: absolute;
+	background-color: #ff3636;
+	content: "";
+	width: 10px;
+	height: 10px;
+	bottom: -4px;
+	left: 50%;
+	margin-left: -5px;
+	border-radius: 50%;
 }
-
-.timeline .event:before,
-.timeline .event:after {
-    position: absolute;
-    display: block;
-    top: 0;
+ul.timeline-list {
+	position: relative;
+	margin: 0;
+	padding: 0
 }
-
-.timeline .event:before {
-    left: -207px;
-    content: attr(data-date);
-    text-align: right;
-    font-weight: 100;
-    font-size: 0.9em;
-    min-width: 120px;
+ul.timeline-list:before {
+	position: absolute;
+	content: "";
+	width: 2px;
+	height: 100%;
+	background-color: #ff3636;
+	left: 50%;
+	top: 0;
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
 }
-
-@media (max-width: 767px) {
-    .timeline .event:before {
-        left: 0px;
-        text-align: left;
-    }
+ul.timeline-list li {
+	position: relative;
+	clear: both;
+	display: table;
 }
-
-.timeline .event:after {
-    -webkit-box-shadow: 0 0 0 3px #727cf5;
-    box-shadow: 0 0 0 3px #727cf5;
-    left: -55.8px;
-    background: rgb(15, 15, 15);
-    border-radius: 50%;
-    height: 9px;
-    width: 9px;
-    content: "";
-    top: 5px;
+.timeline_content {
+	border: 2px solid #ff3636;
+	background-color:#ff3636;
+  color: #fff;
 }
-.timeline .event{
-    color: #fff;
+ul.timeline-list li .timeline_content {
+	width: 45%;
+	color: #fff;
+	padding: 30px;
+	float: left;
+	text-align: right;
 }
-@media (max-width: 767px) {
-    .timeline .event:after {
-        left: -31.8px;
-    }
+ul.timeline-list li:nth-child(2n) .timeline_content {
+	float: right;
+	text-align: left;
 }
-
-.rtl .timeline {
-    border-left: 0;
-    text-align: right;
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 4px;
-    border-top-left-radius: 4px;
-    border-right: 3px solid #727cf5;
+.timeline_content h4 {
+	font-size: 22px;
+	font-weight: 600;
+	margin: 10px 0;
 }
-
-.rtl .timeline .event::before {
-    left: 0;
-    right: -170px;
+ul.timeline-list li:before {
+	position: absolute;
+	content: "";
+	width: 25px;
+	height: 25px;
+	background-color: #ff3636;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	border-radius: 50%;
 }
-
-.rtl .timeline .event::after {
-    left: 0;
-    right: -55.8px;
+.timeline_content span {
+	font-size: 18px;
+	font-weight: 500;
+	font-family: poppins;
+	color: #fff;
 }
-*{
-    background-color: black;
+#timeline-1{
+  background-color: black;
 }
