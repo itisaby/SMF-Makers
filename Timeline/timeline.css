@@ -106,13 +106,14 @@ ul.timeline-list li:before {
 }
 
 footer {
-  background: #222;
-  color: #aaa;
+  background: #000;
+  color: rgb(20, 19, 19);
   padding-top: 10px;
 }
 
+
 footer a {
-  color: #aaa;
+  color: rgb(24, 23, 23);
 }
 
 footer a:hover {
@@ -133,6 +134,7 @@ footer .three-column li{
  width: 33.3333%;
   float: left;
   padding: 5px 0;
+  color: #fff;
 }
 
 footer .socila-list {
