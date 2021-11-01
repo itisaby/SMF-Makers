@@ -5,7 +5,7 @@
 body {
     padding-top: 3rem;
     padding-bottom: 3rem;
-    color: #5a5a5a;
+    background-color: black;
   }
   
   
@@ -94,14 +94,16 @@ body {
   }
   #navbar {
     overflow: hidden;
-    background-color: black;
+    background-color: rgba(0,0,0,0.4);
     padding: 35px 10px;
     transition: 0.4s;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 99;
-   
+    
+      -webkit-backdrop-filter: blur(8px);
+      backdrop-filter: blur(8px);
   }
   
   #navbar a {
@@ -276,6 +278,6 @@ body {
 }
 
 .gg{
-  width: 90%;
-  margin-left: 5%;
+  width: 100%;
+
 }
