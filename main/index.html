@@ -2,28 +2,233 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Poppins:400,500,600,700" rel="stylesheet">
-    <link rel="stylesheet" href="timeline.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
+  <link rel="stylesheet" href="../About/style.css">
+  <link rel="stylesheet" href="../Home/styles.css">
+  <link rel="stylesheet" href="../Tracks/tracks.css">
+  <link rel="stylesheet" href="../Timeline/timeline.css">
+  <link rel="stylesheet" href="../Timeline/footer.css">
+  
+  <title>Smart Maker Fest</title>
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
 
-    <title>Hello, world!</title>
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <div id="timeline-1">
+  <!-- Home -->
+  <header class="header">
+    <nav class="navbar" id="navbar">
+      <a href="#" style="color: white;">Smart Maker</a>
+      <ul class="nav-menu" id="logo">
+        <a href="#" class="hover-underline-animation" style="margin-right: 40px; color: white;">Tracks</a>
+        <a href="#" class="hover-underline-animation" style="color: white;">Contact</a>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <div id="myCarousel" class="carousel slide gg" data-bs-ride="carousel" style="margin-top:87px;">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://images.unsplash.com/photo-1546587348-d12660c30c50?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bmF0dXJhbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80"
+            alt="">
+
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Smart Maker</h1>
+              <p>Festival Kolkata</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__480.jpg" alt="">
+
+          <div class="container">
+            <div class="carousel-caption">
+              <h1></h1>
+              <p></p>
+              <p><a class="btn btn-lg btn-primary" href="#">Blogs</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://cdn.wallpapersafari.com/52/26/dCcvAY.jpg" alt="">
+
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1></h1>
+              <p></p>
+              <p><a class="btn btn-lg btn-primary" href="#">Makers and Exhibits</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+  </main>
+
+
+  <!-- Home Ends -->
+
+  <!-- About  -->
+
+      <div class="container">
+        <div class="line-1">
+            SMART Maker Festival
+        </div>
+    
+        <div class="info1">
+            <img id="img1" src="pexels-cottonbro-4722583.jpg">
+    
+            <div class="line-2">
+                SMART Maker Festival is a family-friendly showcase of creativity, invention, and resourcefulness, and a celebration of the great minds contributing in the fields of innovation and Technologies. 
+                It’s a place where people show what they are making, and share what they are learning. 
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="line-3">
+            SMART Maker Festival
+        </div>
+    
+        <div class="info2">
+            <div class="line-4">
+                SMART Maker Festival is a family-friendly showcase of creativity, invention, and resourcefulness, and a celebration of the great minds contributing in the fields of innovation and Technologies. 
+                It’s a place where people show what they are making, and share what they are learning. 
+            </div>
+
+            <img id="img2" src="pexels-anni-roenkae-4793467.jpg">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="line-5">
+            SMART Maker Festival
+        </div>
+   
+        <div class="info3">
+            <img id="img3" src="pexels-arthur-ver-426983.jpg">
+    
+            <div class="line-6">
+                SMART Maker Festival is a family-friendly showcase of creativity, invention, and resourcefulness, and a celebration of the great minds contributing in the fields of innovation and Technologies. 
+                It’s a place where people show what they are making, and share what they are learning. 
+            </div>
+        </div>
+    </div>
+
+
+
+  <!-- About Ends -->
+
+  <!-- Tracks -->
+
+     <div class="container">
+        <hr>
+        <h2 class="mb-4">Tracks</h2>
+        
+        <div class="row justify-content-center mx-sm-5 px-sm-5">
+            <div class="flip-card col-sm-6 mb-3">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h1>Track 1</h1>
+                    </div>
+                    
+                    <div class="flip-card-back">
+                        <h1>Track Name 1</h1>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="flip-card col-sm-6 mb-3">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h1>Track 2</h1>
+                    </div>
+                    
+                    <div class="flip-card-back">
+                        <h1>Track Name 2</h1>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="flip-card col-sm-6 mb-3">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h1>Track 3</h1>
+                    </div>
+                    
+                    <div class="flip-card-back">
+                        <h1>Track Name 3</h1>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="flip-card col-sm-6 mb-3">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h1>Track 4</h1>
+                    </div>
+                    
+                    <div class="flip-card-back">
+                        <h1>Track Name 4</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+  <!-- Tracks End -->
+
+  <!-- Timeline  -->
+        <div id="timeline-1">
 
         <section class="experience pt-100 pb-100" id="experience">
             <div class="container">
@@ -162,15 +367,20 @@
     </footer>
 
 
-    <!-- Optional JavaScript; choose one of the two! -->
+  <!-- Timeline Ends -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+  <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://getbootstrap.com/docs/5.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
