@@ -1,15 +1,7 @@
-body{
-    background-color: black;
-}
-
-h2{
-    text-align: center;
-    color: #fff;
-}
-
 .flip-card {
     background-color: transparent;
-    height: 300px;
+    height: 80vw;
+    max-height: 400px;
     perspective: 1000px;
 }
 
@@ -41,22 +33,23 @@ h2{
     border-radius: 10px;
     background-color: #000; 
     color: #fff;
+    font-family: 'Orbitron', sans-serif;
 }
 
 .flip-card-back {
     border-radius: 10px;
     background: linear-gradient(-45deg,#ee7752,#e73c7e,#23a6d5,#23d5ab);
-    background-size: 200% 200%;
     color: #fff;
     transform: rotateY(180deg);
+    font-family: 'Sora', sans-serif;
 }
 
-hr:not([size]){
-    height: 4px;
-    border-radius: 2px;
+.flip-card-back h3{
+    font-size: 5vw;
 }
 
-hr{
-    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
-    opacity: 1;
-}
+@media screen and (min-width: 576px) {
+    .flip-card-back h3{
+       font-size: 28px;
+    }
+  }
