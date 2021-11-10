@@ -1,9 +1,7 @@
-window.onscroll = () => {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("navbar").style.padding = "15px 10px !important";
-    document.getElementById("logo").style.fontSize = "25px";
+(new IntersectionObserver(function(e,o){
+  if (e[0].intersectionRatio > 0){
+      document.documentElement.removeAttribute('class');
   } else {
-    document.getElementById("navbar").style.padding = "35px 10px !important";
-    document.getElementById("logo").style.fontSize = "35px";
-  }
-};
+      document.documentElement.setAttribute('class','stuck');
+  };
+})).observe(document.querySelector('.trigger'));
