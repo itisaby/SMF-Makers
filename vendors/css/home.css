@@ -68,3 +68,15 @@ body {
     height: 100%;
     object-fit: cover;
 }
+
+.sticky-top {
+    transition: all 0.25s ease-in;
+  }
+  
+  /* style for when sitcky is applied */
+  .stuck .navbar.sticky-top {
+    background-color: rgba(0,0,0,0.36) !important;
+    backdrop-filter: blur(6px) !important;
+    padding-top: .8rem !important;
+    padding-bottom: .8rem !important;
+  }
