@@ -38,7 +38,10 @@
 
 .flip-card-back {
     border-radius: 10px;
-    background: linear-gradient(-45deg,#ee7752,#e73c7e,#23a6d5,#23d5ab);
+    background-image: url(../../assets/images/grad_bg.gif);
+    background-size: cover;
+    border-radius: 10px;
+    border-bottom: solid 8px #fff;
     color: #fff;
     transform: rotateY(180deg);
     font-family: 'Sora', sans-serif;
@@ -52,4 +55,4 @@
     .flip-card-back h3{
        font-size: 28px;
     }
-  }
+}

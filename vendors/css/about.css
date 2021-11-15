@@ -10,6 +10,11 @@
     text-align: center;
     color: #fff;
     font-weight: 500;
+    background-image: url(../../assets/images/grad_bg.gif);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .about-text{

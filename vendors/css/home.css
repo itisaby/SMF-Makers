@@ -4,6 +4,7 @@ body {
     animation: fadeInAnimation ease-out 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    overflow-x: hidden;
 }
 @keyframes fadeInAnimation {
     0% {
