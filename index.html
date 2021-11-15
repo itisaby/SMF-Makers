@@ -40,8 +40,8 @@
     <!-- HEADER -->
         <!-- NAV -->
         <span class="position-absolute trigger">
-    <!-- hidden trigger to apply 'stuck' styles -->
-</span>
+        <!-- hidden trigger to apply 'stuck' styles -->
+        </span>
         <nav id="navbar" class="navbar navbar-expand-sm sticky-top navbar-dark bg-black bg-info py-4">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Logo</a>
@@ -67,9 +67,19 @@
         <!-- End of NAV -->
 
 
-        <!-- HERO --><li class="nav-item">
-                            
-        </li>
+        <!-- HERO -->
+        <div id="myCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+            <!-- CAROUSEL-INDICATORS -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <!-- End of CAROUSEL-INDICATORS -->
+             <!-- Need some dark background colors so that navbar is visible enough -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
                     <img src="https://images.unsplash.com/photo-1546587348-d12660c30c50?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bmF0dXJhbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80"
                         class="d-block w-100">
 
@@ -107,19 +117,15 @@
             </button>
 
             <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span><li class="nav-item">
-                            
-                </li>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
             </button>
             <!-- End of Next Prev -->
         </div>
         <!-- End of HERO -->
-    <!-- END OF HEADER -->
-
 
 
     <main>
-
         <!-- ABOUT -->
         <section class="py-5">
             <div id="about" class="container my-3 px-lg-5 px-4">
@@ -140,7 +146,6 @@
                 <div class="about py-5 mx-md-5">
                     <h1 class="heading mb-4 animate__animated animate__zoomIn wow" data-wow-delay="600ms">About -
                         2</h1>
-
                     <div class="row align-items-start justify-content-between">
                         <div class="col-12 my-3 col-md-6 about-text text-md-start text-center animate__animated animate__fadeInLeftBig wow"
                             data-wow-delay="600ms">
