@@ -94,3 +94,13 @@ transition: all .5s ease-in-out 0s;
 .btn-fregister:hover{
   border: 2px solid #fff !important;
 }
+
+#contact{
+  text-decoration: none;
+  color: #7d30e2;
+  font-weight: 500;
+  transition: all ease 0.3s;
+}
+#contact:hover{
+  color: #f9f9f9;
+}
